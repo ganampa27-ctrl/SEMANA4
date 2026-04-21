@@ -1,0 +1,29 @@
+using UnityEngine;
+
+public class Ejercicio3 : MonoBehaviour
+{
+    int vidaActual = 35;
+    int dañoRecibido = 5;
+    void Start()
+    {
+        vidaActual -= dañoRecibido;
+        if (vidaActual > 30)
+        {
+            Debug.Log(" Jugador estable");
+        }
+        else if (vidaActual > 1 && vidaActual <= 30)
+        {
+            Debug.Log(" Jugador en peligro");
+        }
+        else
+        {
+            Debug.Log("Game Over");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -1,0 +1,25 @@
+using UnityEngine;
+
+public class ejercicio1 : MonoBehaviour
+{
+    public int energiaActual = 25 ;
+    public int costoHabilidad = 5 ;
+    void Start()
+    {
+      if (energiaActual >= costoHabilidad)
+      {
+        int energiaRestante = energiaActual - costoHabilidad;
+            Debug.Log("Has usado la habilidad, te queda " + energiaRestante + " de energía");
+      }
+      else
+      {
+          Debug.Log("No tienes suficiente energía para usar la habilidad");
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

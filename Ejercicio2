@@ -1,0 +1,24 @@
+using UnityEngine;
+
+public class Ejercicio2 : MonoBehaviour
+{
+    bool tieneLlave = true;
+    bool espacioDisponible = true;
+    void Start()
+    {
+        bool AbrirCofre = tieneLlave && espacioDisponible;
+        if (AbrirCofre)
+        {
+            Debug.Log("Cofre abierto");
+        }
+        else 
+        {
+            Debug.Log("No puedes abrir el cofre");
+        }
+
+    }
+     void Update()
+    {
+        
+    }
+}
